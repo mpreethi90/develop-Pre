@@ -1,0 +1,29 @@
+{
+  "name": "beam-sample",
+  "version": "1.0.0",
+  "devDependencies": {
+    "blink-diff": "^1.0.13",
+    "chai": "^4.1.2",
+    "crypto-js": "^3.1.9-1",
+    "eyes.images": "0.0.50",
+    "macaca-chrome": "*",
+    "macaca-cli": "2.1.12",
+    "macaca-coverage": "^1.0.3",
+    "macaca-reporter": "^1.0.10",
+    "macaca-wd": "^1.0.17",
+    "mocha": "^4.0.1",
+    "mocha-parallel-tests": "2.0.3",
+    "mochawesome": "^3.0.2",
+    "saucelabs": "^1.4.0",
+    "papaparse": "^4.3.2"
+  },
+  "license": "UNLICENSED",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mpreethi90/develop-Pre"
+  },
+  "scripts": {
+    "testsmoke": "$(npm bin)/macaca run --verbose -d ./webtests/1smoke/verifySearch.test.js --verbose"
+  }
+}
