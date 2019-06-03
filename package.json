@@ -24,6 +24,6 @@
     "url": "https://github.com/mpreethi90/develop-Pre"
   },
   "scripts": {
-    "testsmoke": "$(npm bin)/macaca run --verbose -d ./webtests/1smoke/verifySearch.test.js --verbose"
+    "testsample": "$(npm bin)/macaca run --verbose -d ./webtests/1smoke/ --verbose"
   }
 }

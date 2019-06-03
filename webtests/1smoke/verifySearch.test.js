@@ -18,11 +18,16 @@ driverGearUp.makeSuite(path.basename(__filename), 'SearchBar test suite', driver
     hasEachTestPassed(this)
   })
 
-  it('Search for a product. Verify the list', () => {
+  it('Search for a product. Verify the list and product detail', () => {
     return driver
       .loadAmazonHomePage()
-      .elementByCss(pageObjects.homePage.searchBar)
+      .searchForAProduct(testdata.homePage.search.kickScooter)
+      .waitForElementByCss(pageObjects.searchListPage.searchResultItem)
       .click()
-      .keys('preee')
+      .waitForElementByCss(pageObjects.productDetailPage.productTitleCss)
+      .text()
+      .then(scooterTitle=>{
+        assert.include(scooterTitle,testdata.productDetail.scooterTitle,"FAIL: kick scooter search result product does not display proper title")
+      })
   })
 })
