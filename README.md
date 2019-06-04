@@ -5,4 +5,4 @@
 
 2) Run `npm install` (Node.js v6.0 or higher is required)
 
-3) Run `npm run testsmoke` to see how a sample tests works
+3) Run `npm run testsample` to see how a sample tests works
